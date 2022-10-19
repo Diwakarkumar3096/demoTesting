@@ -1,3 +1,49 @@
-h1{
-    color: blue;
+*{
+    margin:0px;
+    padding: opx;
 }
+.box{
+    background-color: rgb(171, 245, 245);
+    height: 500px;
+    width:500px;
+    border: 2px solid black;
+    margin: 100px auto;
+}
+.ball{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    background: blue;
+    border-radius: 50%;
+    animation:moving 5s linear infinite;
+}
+@keyframes moving{
+    0%{
+        top: 0px;
+        left:0px
+    }
+    25%{
+        top:0px;
+        left:490px;
+        background: red;
+
+    }
+    50%{
+        top: 490px;
+        left: 490px;
+        background: green;
+    }
+    75%{
+        top: 490px;
+        left: 0px;
+        background: yellow;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background: #000;
+    }
+}
+
